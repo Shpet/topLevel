@@ -1,0 +1,141 @@
+.categories {
+  padding: 126px 0 50px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(
+      178.74deg,
+      #000000 5.98%,
+      rgba(0, 0, 0, 0) 115.88%
+    ),
+    url(../images/categories/bg-categories.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sub-title {
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__list {
+    margin: 79px auto 58px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 87px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 299px;
+      max-width: 299px;
+
+      .img-wrap {
+        width: 100%;
+        height: 232px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(95, 92, 92, 0.17);
+      }
+
+      .description {
+        padding: 30px 20px;
+        height: 117px;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(100px);
+        width: 100%;
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+
+          &::before {
+            content: '';
+            border-top: 2px solid $main;
+            width: 33px;
+            display: block;
+            position: relative;
+            top: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 60px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .categories {
+      padding: 70px 0;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .sub-title {
+      font-size: 15px;
+    }
+
+    &__list {
+      margin: 40px auto;
+      gap: 50px 20px;
+
+      &-item {
+        flex-basis: 158px;
+        max-width: 158px;
+
+        .img-wrap {
+          height: 122px;
+        }
+
+        .description {
+          padding: 15px 10px;
+          height: 61px;
+
+          p {
+            font-size: 14px;
+
+            &::before {
+              width: 18px;
+            }
+
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      width: 222px;
+      height: 35px;
+      font-size: 10px;
+      text-transform: none;
+    }
+  }
+}

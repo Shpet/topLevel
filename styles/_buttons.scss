@@ -1,0 +1,41 @@
+.btn {
+  padding: 20px 18px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid $main;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.25s;
+  
+  @media screen and(min-width: 769px) {
+    &:hover {
+      background-color: $main;
+    }
+  }
+
+  &-filled {
+    @extend .btn;
+    background-color: $main;
+
+    @media screen and(min-width: 769px) {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &-small {
+    @extend .btn;
+    padding: 13px 15px;
+  }
+
+  &-big {
+    @extend .btn;
+    padding: 35px 40px;
+  }
+
+  @media screen and (max-width: 440px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

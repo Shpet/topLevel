@@ -1,0 +1,110 @@
+.our-works {
+  margin: 50px auto 115px;
+  padding-top: 50px;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .works {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 0 300px;
+      max-width: 300px;
+      text-transform: uppercase;
+
+      img {
+        width: auto;
+        margin-bottom: auto;
+      }
+
+      h3 {
+        margin: 40px auto 30px;
+        letter-spacing: 0.05em;
+      }
+
+      .parameters {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        h4 {
+          margin: 30px auto 50px;
+          font-weight: 600;
+        }
+
+        div {
+          font-size: 15px;
+        }
+
+        &__separator {
+          margin: 0 20px 14px;
+          width: 20px;
+          height: 28px;
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='32' viewBox='0 0 24 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2L21 15.3115L1.88889 30' stroke='%23ED1C24' stroke-width='3'/%3E%3C/svg%3E");
+          background-size: contain;
+          background-repeat: no-repeat;
+          align-self: flex-end;
+        }
+      }
+
+      button {
+        margin: 45px auto 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 159px;
+        height: 46px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1250px) {
+  .our-works .works__item {
+    flex-basis: 240px;
+    max-width: 240px;
+  }
+}
+
+@media screen and(max-width: 940px) {
+  .our-works.container {
+    margin-bottom: 110px;
+
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 25px;
+      max-width: 195px;
+    }
+
+    .works {
+      margin-top: 60px;
+      justify-content: center;
+      gap: 50px;
+
+      &__item {
+        flex-basis: 325px;
+        max-width: 325px;
+
+        h4 {
+          font-size: 15px;
+        }
+
+        button {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
