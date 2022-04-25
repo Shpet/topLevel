@@ -699,7 +699,7 @@ header.container nav a.active {
 }
 
 .preview-screen {
-  background-image: linear-gradient(90deg, #000000 13.35%, rgba(0, 0, 0, 0) 61.66%), linear-gradient(1.23deg, #000000 6.2%, rgba(0, 0, 0, 0) 21.79%), linear-gradient(182.06deg, #000000 8.2%, rgba(0, 0, 0, 0) 92.71%), url("../images/bg-preview-screen.jpg");
+  background-image: linear-gradient(90deg, #000000 13.35%, rgba(0, 0, 0, 0) 61.66%), linear-gradient(1.23deg, #000000 6.2%, rgba(0, 0, 0, 0) 21.79%), linear-gradient(182.06deg, #000000 8.2%, rgba(0, 0, 0, 0) 92.71%), url("../images/bg-preview-screen.webp");
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -750,7 +750,7 @@ header.container nav a.active {
 
 @media screen and (max-width: 440px) {
   .preview-screen {
-    background-image: linear-gradient(90deg, #000000 15.35%, rgba(0, 0, 0, 0) 61.66%), linear-gradient(1.23deg, #000000 26.2%, rgba(0, 0, 0, 0) 34.79%), linear-gradient(182.06deg, #000000 22.2%, rgba(0, 0, 0, 0) 92.71%), url("../images/bg-preview-screen.jpg");
+    background-image: linear-gradient(90deg, #000000 15.35%, rgba(0, 0, 0, 0) 61.66%), linear-gradient(1.23deg, #000000 26.2%, rgba(0, 0, 0, 0) 34.79%), linear-gradient(182.06deg, #000000 22.2%, rgba(0, 0, 0, 0) 92.71%), url("../images/bg-preview-screen.webp");
     background-size: contain;
     background-position: center right;
   }
@@ -788,8 +788,8 @@ header.container nav a.active {
 .statistics {
   margin-top: -120px;
   padding-top: 60px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(9.8%, #000000), color-stop(75.91%, rgba(0, 0, 0, 0.54))), url("../images/statistics/bg-statistic.png");
-  background-image: linear-gradient(0deg, #000000 9.8%, rgba(0, 0, 0, 0.54) 75.91%), url("../images/statistics/bg-statistic.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(9.8%, #000000), color-stop(75.91%, rgba(0, 0, 0, 0.54))), url("../images/statistics/bg-statistic.webp");
+  background-image: linear-gradient(0deg, #000000 9.8%, rgba(0, 0, 0, 0.54) 75.91%), url("../images/statistics/bg-statistic.webp");
   background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center 65px;
@@ -954,7 +954,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-1 .benefits__img {
-  background-image: url("../images/statistics/benefits1.png");
+  background-image: url("../images/statistics/benefits1.webp");
   width: 57.11px;
   height: 52px;
 }
@@ -982,7 +982,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-2 .benefits__img {
-  background-image: url("../images/statistics/benefits2.png");
+  background-image: url("../images/statistics/benefits2.webp");
   width: 46px;
   height: 46px;
 }
@@ -1016,7 +1016,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-3 .benefits__img {
-  background-image: url("../images/statistics/benefits3.png");
+  background-image: url("../images/statistics/benefits3.webp");
   width: 46px;
   height: 46px;
 }
@@ -1047,7 +1047,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-4 .benefits__img {
-  background-image: url("../images/statistics/benefits4.png");
+  background-image: url("../images/statistics/benefits4.webp");
   width: 46px;
   height: 46px;
 }
@@ -1081,7 +1081,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-5 .benefits__img {
-  background-image: url("../images/statistics/benefits5.png");
+  background-image: url("../images/statistics/benefits5.webp");
   width: 44px;
   height: 44px;
 }
@@ -1110,7 +1110,7 @@ header.container nav a.active {
 }
 
 .statistics .benefits__item-6 .benefits__img {
-  background-image: url("../images/statistics/benefits6.png");
+  background-image: url("../images/statistics/benefits6.webp");
   width: 48px;
   height: 49px;
 }
@@ -1151,11 +1151,11 @@ header.container nav a.active {
 }
 
 @media screen and (max-width: 940px) {
-  .line {
-    display: none;
-  }
   .statistics {
     background: none;
+  }
+  .statistics .line {
+    display: none;
   }
   .statistics .features {
     margin-bottom: 0;
@@ -1262,8 +1262,8 @@ header.container nav a.active {
     gap: 30px 20px;
     width: 100%;
     height: auto;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-4.11%, #000000), color-stop(53.43%, rgba(0, 0, 0, 0.54))), url("../images/statistics/bg-statistic.png");
-    background-image: linear-gradient(0deg, #000000 -4.11%, rgba(0, 0, 0, 0.54) 53.43%), url("../images/statistics/bg-statistic.png");
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-4.11%, #000000), color-stop(53.43%, rgba(0, 0, 0, 0.54))), url("../images/statistics/bg-statistic.webp");
+    background-image: linear-gradient(0deg, #000000 -4.11%, rgba(0, 0, 0, 0.54) 53.43%), url("../images/statistics/bg-statistic.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1331,7 +1331,7 @@ header.container nav a.active {
 
 .photo-slider-wrap {
   margin: 167px auto 140px;
-  background-image: url(../images/photo-slider/bg-photo-slider.png);
+  background-image: url(../images/photo-slider/bg-photo-slider.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1374,27 +1374,16 @@ header.container nav a.active {
           justify-content: space-between;
 }
 
-.photo-slider-wrap .owl-carousel .owl-dots button {
-  cursor: default;
-}
-
-.photo-slider-wrap .owl-carousel .owl-dots button span {
-  margin: 0 7px 0;
-  position: relative;
-  top: -5px;
-  width: 47px;
-  height: 15px;
-  background: none;
-  display: none;
-}
-
-.photo-slider-wrap .owl-carousel .owl-dots button:hover span {
-  background: none;
-}
-
-.photo-slider-wrap .owl-carousel .owl-dots button.active span {
-  background-color: #ed1c24;
+.photo-slider-wrap .owl-carousel .owl-dots::after {
+  content: '';
+  position: absolute;
   display: block;
+  top: -8px;
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 16px;
+  background-color: #ed1c24;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1596,7 +1585,7 @@ header.container nav a.active {
 .categories {
   padding: 126px 0 50px;
   margin-bottom: 30px;
-  background-image: linear-gradient(178.74deg, #000000 5.98%, rgba(0, 0, 0, 0) 115.88%), url(../images/categories/bg-categories.jpg);
+  background-image: linear-gradient(178.74deg, #000000 5.98%, rgba(0, 0, 0, 0) 115.88%), url(../images/categories/bg-categories.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1837,7 +1826,7 @@ header.container nav a.active {
       align-self: flex-end;
 }
 
-.our-works .works__item button {
+.our-works .works__item a.btn-filled {
   margin: 45px auto 115px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1885,14 +1874,14 @@ header.container nav a.active {
   .our-works.container .works__item h4 {
     font-size: 15px;
   }
-  .our-works.container .works__item button {
+  .our-works.container .works__item a.btn-filled {
     margin-bottom: 0;
   }
 }
 
 .why {
   padding: 75px 0 145px;
-  background-image: linear-gradient(181.2deg, #000000 -12.55%, rgba(0, 0, 0, 0) 115.88%), url(../images/bg-why.png);
+  background-image: linear-gradient(181.2deg, #000000 -12.55%, rgba(0, 0, 0, 0) 115.88%), url(../images/bg-why.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -2280,7 +2269,7 @@ header.container nav a.active {
 }
 
 footer {
-  background-image: linear-gradient(180.47deg, #000000 -7.71%, rgba(0, 0, 0, 0) 132.74%), url("../images/bg-footer.png");
+  background-image: linear-gradient(180.47deg, #000000 -7.71%, rgba(0, 0, 0, 0) 132.74%), url("../images/bg-footer.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2948,6 +2937,215 @@ footer .footer-items .usefull-links button {
   }
   .default-page .list ul li {
     font-size: 10px;
+  }
+}
+
+.car-page .preview {
+  padding-top: 130px;
+  height: 100vh;
+  max-height: 1430px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.car-page .preview.ford {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-ford-gt.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-ford-gt.webp");
+}
+
+.car-page .preview.nissan {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-nissan.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-nissan.webp");
+}
+
+.car-page .preview.dodge {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-dodge.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-dodge.webp");
+}
+
+.car-page .preview .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.car-page .preview .container h1 {
+  margin: auto 0;
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: 0.05em;
+  text-transform: initial;
+}
+
+.car-page .preview .container h1 .red {
+  font-size: inherit;
+  color: #ed1c24;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.car-page .preview .container h1 b {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.car-page .preview .container .info {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.car-page .preview .container .info,
+.car-page .preview .container .motto {
+  text-align: right;
+  font-size: 25px;
+}
+
+.car-page .preview .container .info b,
+.car-page .preview .container .motto b {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.car-page .preview .container .motto {
+  margin: 30px 0 50px;
+  color: #ed1c24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.car-page .preview .container .motto .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ed1c24;
+}
+
+.car-page .preview .container .motto p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.car-page .characteristics {
+  margin: 250px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+}
+
+.car-page .characteristics__item {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.car-page .characteristics__item img {
+  position: absolute;
+  -webkit-box-shadow: inset 0px 0px 97px 97px #551114, 0 0 66px 50px #270406;
+          box-shadow: inset 0px 0px 97px 97px #551114, 0 0 66px 50px #270406;
+  border-radius: 50%;
+}
+
+.car-page .characteristics__item span {
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.car-page .characteristics__item span b {
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.car-page .btn-filled {
+  margin: 15px auto 50px;
+  width: 670px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 940px) {
+  .car-page .characteristics__item span {
+    font-size: 18px;
+  }
+  .car-page .characteristics__item span b {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .car-page .preview .container h1 {
+    font-size: 48px;
+  }
+  .car-page .preview .container .info,
+  .car-page .preview .container .motto p {
+    font-size: 18px;
+    white-space: pre-line;
+  }
+  .car-page .btn-filled {
+    width: 250px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .car-page .preview .container h1 {
+    font-size: 36px;
+  }
+  .car-page .preview .container .info,
+  .car-page .preview .container .motto p {
+    font-size: 10px;
+    white-space: normal;
+  }
+  .car-page .preview .container .motto {
+    gap: 10px;
+  }
+  .car-page .characteristics {
+    margin: 150px auto;
+  }
+  .car-page .characteristics__item span {
+    font-size: 14px;
+  }
+  .car-page .characteristics__item span b {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 .photo-slider-wrap {
   margin: 167px auto 140px;
-  background-image: url(../images/photo-slider/bg-photo-slider.png);
+  background-image: url(../images/photo-slider/bg-photo-slider.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -39,27 +39,16 @@
     display: flex;
     justify-content: space-between;
 
-    button {
-      cursor: default;
-
-      span {
-        margin: 0 7px 0;
-        position: relative;
-        top: -5px;
-        width: 47px;
-        height: 15px;
-        background: none;
-        display: none;
-      }
-
-      &:hover span {
-        background: none;
-      }
-
-      &.active span {
-        background-color: $main;
-        display: block;
-      }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -8px;
+      left: calc(50% - 24px);
+      width: 48px;
+      height: 16px;
+      background-color: $main;
+      border-radius: 6px;
     }
   }
 }

@@ -6,7 +6,7 @@
       #000000 9.8%,
       rgba(0, 0, 0, 0.54) 75.91%
     ),
-    url('../images/statistics/bg-statistic.png');
+    url('../images/statistics/bg-statistic.webp');
   background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center 65px;
@@ -130,7 +130,7 @@
       position: relative;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits1.png');
+        background-image: url('../images/statistics/benefits1.webp');
         width: 57.11px;
         height: 52px;
       }
@@ -156,7 +156,7 @@
       height: 83px;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits2.png');
+        background-image: url('../images/statistics/benefits2.webp');
         width: 46px;
         height: 46px;
       }
@@ -184,7 +184,7 @@
       align-self: center;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits3.png');
+        background-image: url('../images/statistics/benefits3.webp');
         width: 46px;
         height: 46px;
       }
@@ -211,7 +211,7 @@
       align-self: center;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits4.png');
+        background-image: url('../images/statistics/benefits4.webp');
         width: 46px;
         height: 46px;
       }
@@ -240,7 +240,7 @@
       align-self: flex-end;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits5.png');
+        background-image: url('../images/statistics/benefits5.webp');
         width: 44px;
         height: 44px;
       }
@@ -266,7 +266,7 @@
       align-self: flex-end;
 
       .benefits__img {
-        background-image: url('../images/statistics/benefits6.png');
+        background-image: url('../images/statistics/benefits6.webp');
         width: 48px;
         height: 49px;
       }
@@ -308,12 +308,12 @@
   }
 }
 @media screen and (max-width: 940px) {
-  .line {
-    display: none;
-  }
-
   .statistics {
     background: none;
+
+    .line {
+      display: none;
+    }
 
     .features {
       margin-bottom: 0;
@@ -418,7 +418,7 @@
           #000000 -4.11%,
           rgba(0, 0, 0, 0.54) 53.43%
         ),
-        url('../images/statistics/bg-statistic.png');
+        url('../images/statistics/bg-statistic.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
