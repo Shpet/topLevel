@@ -31,7 +31,6 @@ $(document).ready(function () {
     // Your custom settings go here
   });
 
-  
   // cookies
   const cookies = document.querySelector('.cookies');
   const hideCookies = localStorage.getItem('acceptCookies');
@@ -66,16 +65,11 @@ $(document).ready(function () {
   );
 
   modalCloseButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const activeModal = document.querySelector('.modal.active');
-
-      activeModal.classList.remove('active');
-    });
+    button.addEventListener('click', () => {});
   });
 
   modalCloseBackgrounds.forEach((background) => {
     background.addEventListener('click', (e) => {
-      console.log(e);
       if (e.target === background) {
         const activeModal = document.querySelector('.modal.active');
         activeModal.classList.remove('active');
@@ -83,7 +77,42 @@ $(document).ready(function () {
     });
   });
 
+  // forms
+  const formBtns = document.querySelectorAll('button[type="submit"]');
 
+  formBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
 
-  
+      const form = e.target.getAttribute('data-form');
+      const mailUrl = '../backend/mail.php';
+      const selectorModalThanks = '.modal.thanks';
+
+      offModal();
+      sendAjaxForm(selectorModalThanks, form, mailUrl);
+
+      return false;
+    });
+  });
 });
+
+function sendAjaxForm(thanks, ajax_form, url) {
+  $.ajax({
+    url: url,
+    type: 'POST',
+    dataType: 'html',
+    data: $('#' + ajax_form).serialize(),
+    success: function () {
+      document.querySelector(`${thanks}`).classList.add('active');
+    },
+    error: function () {
+      // Данные не отправлены
+      console.log('error');
+    },
+  });
+}
+
+function offModal() {
+  const activeModal = document.querySelector('.modal.active');
+  activeModal.classList.remove('active');
+}
