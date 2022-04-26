@@ -234,6 +234,10 @@ body .fancybox__nav button svg {
   display: none;
 }
 
+body img.withBg {
+  background-color: #e6e6e6;
+}
+
 .carousel__nav {
   margin: 0;
   position: absolute;
@@ -2954,6 +2958,11 @@ footer .footer-items .usefull-links button {
   background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-ford-gt.webp");
 }
 
+.car-page .preview.ford .container .info {
+  margin-left: auto;
+  max-width: 780px;
+}
+
 .car-page .preview.nissan {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-nissan.webp");
   background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-nissan.webp");
@@ -3084,6 +3093,193 @@ footer .footer-items .usefull-links button {
   font-size: 64px;
 }
 
+.car-page .steps {
+  padding: 100px 0;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+}
+
+.car-page .steps.ford {
+  background-image: url(../images/page-car/bg-step-mustang.webp);
+}
+
+.car-page .steps.nissan {
+  background-image: url(../images/page-car/bg-step-nissan.webp);
+}
+
+.car-page .steps.dodge {
+  background-image: url(../images/page-car/bg-step-dodge.webp);
+}
+
+.car-page .steps__row {
+  margin: 0 auto;
+  max-width: 988px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.car-page .steps__row:first-child .description::before {
+  display: none;
+}
+
+.car-page .steps__row:last-child .description::after {
+  display: none;
+}
+
+.car-page .steps .img-wrap {
+  width: 160px;
+  height: 160px;
+  border: 5px solid #ed1c24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 33px;
+}
+
+.car-page .steps .dotted-line {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 175px;
+  border-bottom: 3px dashed #ed1c24;
+  stroke-dasharray: 6px;
+  position: relative;
+}
+
+.car-page .steps .dotted-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: calc(50% - 10.5px);
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/circle-with-border.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.car-page .steps .description {
+  margin-left: 30px;
+  padding: 30px 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 640px;
+  position: relative;
+  font-size: 25px;
+}
+
+.car-page .steps .description-background {
+  background-color: #ed1c24;
+  border-left: 3px solid transparent;
+  color: #000;
+}
+
+.car-page .steps .description-background li {
+  color: inherit;
+}
+
+.car-page .steps .description-border {
+  border-left: 3px solid #ed1c24;
+}
+
+.car-page .steps .description ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  font-size: inherit;
+}
+
+.car-page .steps .description ul li {
+  font-size: inherit;
+}
+
+.car-page .steps .description::after {
+  content: '';
+  display: block;
+  height: calc(50% + 50px - 83px);
+  width: 0;
+  position: absolute;
+  top: calc(50% + 80px);
+  left: calc(-175px - 30px - 81.5px);
+  border-right: 3px dashed #ed1c24;
+}
+
+.car-page .steps .description::before {
+  content: '';
+  display: block;
+  height: calc(50% + 50px - 80px);
+  width: 0;
+  position: absolute;
+  bottom: calc(50% + 80px);
+  left: calc(-175px - 30px - 81.5px);
+  border-left: 3px dashed #ed1c24;
+}
+
+.car-page .gallery #video-carousel .carousel__slide {
+  max-height: 620px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.car-page .gallery #video-thumb-carousel .carousel__slide img {
+  height: 200px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.car-page .gallery .line {
+  margin-top: 70px;
+  width: 100%;
+  height: 0.5px;
+  background-color: #fff;
+  position: relative;
+}
+
+.car-page .gallery .line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 16px;
+  left: calc(50% - 30px);
+  top: -8px;
+  background-color: #ed1c24;
+  border-radius: 6px;
+}
+
 .car-page .btn-filled {
   margin: 15px auto 50px;
   width: 670px;
@@ -3101,12 +3297,48 @@ footer .footer-items .usefull-links button {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1250px) {
+  .car-page .gallery #video-carousel .carousel__slide {
+    max-height: 430px;
+  }
+  .car-page .gallery #video-thumb-carousel .carousel__slide img {
+    width: 195px;
+    height: 150px;
+  }
+}
+
 @media screen and (max-width: 940px) {
   .car-page .characteristics__item span {
     font-size: 18px;
   }
   .car-page .characteristics__item span b {
     font-size: 36px;
+  }
+  .car-page .steps .img-wrap {
+    width: 120px;
+    height: 120px;
+  }
+  .car-page .steps .img-wrap img {
+    width: 75%;
+  }
+  .car-page .steps .dotted-line {
+    max-width: 130px;
+  }
+  .car-page .steps .description {
+    max-width: 480px;
+    font-size: 18px;
+  }
+  .car-page .steps .description::before, .car-page .steps .description::after {
+    height: calc(50% + 50px - 60px);
+    left: calc(-130px - 30px - 61.5px);
+  }
+  .car-page .steps .description::before {
+    bottom: calc(50% + 60px);
+    height: calc(50% + 50px - 63px);
+  }
+  .car-page .steps .description::after {
+    top: calc(50% + 60px);
+    height: calc(50% + 50px - 60px);
   }
 }
 
@@ -3119,10 +3351,86 @@ footer .footer-items .usefull-links button {
     font-size: 18px;
     white-space: pre-line;
   }
+  .car-page .steps {
+    padding: 20px 15px;
+    gap: 50px;
+  }
+  .car-page .steps .img-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    border-width: 2px;
+  }
+  .car-page .steps .img-wrap img {
+    width: 75%;
+  }
+  .car-page .steps .dotted-line {
+    max-width: 50px;
+    border-width: 2px;
+  }
+  .car-page .steps .dotted-line::after {
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    top: calc(50% - 7px);
+  }
+  .car-page .steps .description {
+    margin-left: 15px;
+    padding: 10px 15px;
+    max-width: 260px;
+    border-width: 2px;
+    font-size: 12px;
+  }
+  .car-page .steps .description ul {
+    padding-left: 10px;
+  }
+  .car-page .steps .description::before, .car-page .steps .description::after {
+    left: calc(-50px - 15px - 32px);
+    border-width: 2px;
+  }
+  .car-page .steps .description::before {
+    bottom: calc(50% + 30px);
+    height: calc(50% + 25px - 32px);
+  }
+  .car-page .steps .description::after {
+    top: calc(50% + 30px);
+    height: calc(50% + 25px - 30px);
+  }
+  .car-page .gallery #video-carousel .carousel__slide {
+    max-height: 300px;
+  }
+  .car-page .gallery #video-thumb-carousel {
+    display: block;
+  }
+  .car-page .gallery #video-thumb-carousel .carousel__slide img {
+    width: 135px;
+    height: 100px;
+  }
+  .car-page .gallery .line {
+    margin-top: 30px;
+  }
+  .car-page .gallery .line::after {
+    width: 40px;
+    height: 10px;
+    top: -5px;
+  }
   .car-page .btn-filled {
     width: 250px;
     height: 50px;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .car-page .gallery {
+    padding: 0 0 10px;
+  }
+  .car-page .gallery #video-carousel .carousel__slide {
+    max-height: 180px;
+  }
+  .car-page .gallery #video-thumb-carousel .carousel__slide img {
+    width: 75px;
+    height: 50px;
   }
 }
 

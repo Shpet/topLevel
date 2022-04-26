@@ -15,6 +15,13 @@
         ),
         linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%),
         url('../images/page-car/bg-ford-gt.webp');
+
+      .container {
+        .info {
+          margin-left: auto;
+          max-width: 780px;
+        }
+      }
     }
 
     &.nissan {
@@ -63,9 +70,9 @@
         }
       }
 
-      .info{
-          margin-left: auto;
-          max-width: 700px;
+      .info {
+        margin-left: auto;
+        max-width: 700px;
       }
 
       .info,
@@ -133,6 +140,170 @@
     }
   }
 
+  .steps {
+    padding: 100px 0;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+
+    &.ford {
+      background-image: url(../images/page-car/bg-step-mustang.webp);
+    }
+
+    &.nissan {
+      background-image: url(../images/page-car/bg-step-nissan.webp);
+    }
+
+    &.dodge {
+      background-image: url(../images/page-car/bg-step-dodge.webp);
+    }
+
+    &__row {
+      margin: 0 auto;
+      max-width: 988px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child .description::before {
+        display: none;
+      }
+      &:last-child .description::after {
+        display: none;
+      }
+    }
+
+    .img-wrap {
+      width: 160px;
+      height: 160px;
+      border: 5px solid $main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33px;
+    }
+
+    .dotted-line {
+      flex: 1 0;
+      max-width: 175px;
+      border-bottom: 3px dashed $main;
+      stroke-dasharray: 6px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -12px;
+        top: calc(50% - 10.5px);
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/circle-with-border.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .description {
+      margin-left: 30px;
+      padding: 30px 25px;
+      flex: 1 0;
+      max-width: 640px;
+      position: relative;
+      font-size: 25px;
+
+      &-background {
+        background-color: $main;
+        border-left: 3px solid transparent;
+        color: #000;
+
+        li {
+          color: inherit;
+        }
+      }
+
+      &-border {
+        border-left: 3px solid $main;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 30px;
+        font-size: inherit;
+
+        li {
+          font-size: inherit;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: calc(50% + 50px - 83px);
+        width: 0;
+        position: absolute;
+        top: calc(50% + 80px);
+        left: calc(-175px - 30px - 81.5px);
+        border-right: 3px dashed $main;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: calc(50% + 50px - 80px);
+        width: 0;
+        position: absolute;
+        bottom: calc(50% + 80px);
+        left: calc(-175px - 30px - 81.5px);
+        border-left: 3px dashed $main;
+      }
+    }
+  }
+
+  .gallery {
+    #video-carousel {
+      .carousel__slide {
+        max-height: 620px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    #video-thumb-carousel {
+      .carousel__slide img {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+      }
+    }
+
+    .line {
+      margin-top: 70px;
+      width: 100%;
+      height: 0.5px;
+      background-color: #fff;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 16px;
+        left: calc(50% - 30px);
+        top: -8px;
+        background-color: $main;
+        border-radius: 6px;
+      }
+    }
+  }
+
   .btn-filled {
     margin: 15px auto 50px;
     width: 670px;
@@ -145,6 +316,18 @@
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .car-page .gallery {
+    #video-carousel .carousel__slide {
+      max-height: 430px;
+    }
+
+    #video-thumb-carousel .carousel__slide img {
+      width: 195px;
+      height: 150px;
+    }
+  }
+}
 @media screen and (max-width: 940px) {
   .car-page {
     .characteristics__item span {
@@ -152,6 +335,40 @@
 
       b {
         font-size: 36px;
+      }
+    }
+
+    .steps {
+      .img-wrap {
+        width: 120px;
+        height: 120px;
+
+        img {
+          width: 75%;
+        }
+      }
+
+      .dotted-line {
+        max-width: 130px;
+      }
+
+      .description {
+        max-width: 480px;
+        font-size: 18px;
+
+        &::before,
+        &::after {
+          height: calc(50% + 50px - 60px);
+          left: calc(-130px - 30px - 61.5px);
+        }
+        &::before {
+          bottom: calc(50% + 60px);
+          height: calc(50% + 50px - 63px);
+        }
+        &::after {
+          top: calc(50% + 60px);
+          height: calc(50% + 50px - 60px);
+        }
       }
     }
   }
@@ -171,10 +388,101 @@
       }
     }
 
+    .steps {
+      padding: 20px 15px;
+      gap: 50px;
+
+      .img-wrap {
+        width: 60px;
+        height: 60px;
+        border-radius: 4px;
+        border-width: 2px;
+
+        img {
+          width: 75%;
+        }
+      }
+
+      .dotted-line {
+        max-width: 50px;
+        border-width: 2px;
+
+        &::after {
+          width: 16px;
+          height: 16px;
+          right: -8px;
+          top: calc(50% - 7px);
+        }
+      }
+
+      .description {
+        margin-left: 15px;
+        padding: 10px 15px;
+        max-width: 260px;
+        border-width: 2px;
+        font-size: 12px;
+
+        ul {
+          padding-left: 10px;
+        }
+
+        &::before,
+        &::after {
+          left: calc(-50px - 15px - 32px);
+          border-width: 2px;
+        }
+        &::before {
+          bottom: calc(50% + 30px);
+          height: calc(50% + 25px - 32px);
+        }
+        &::after {
+          top: calc(50% + 30px);
+          height: calc(50% + 25px - 30px);
+        }
+      }
+    }
+
+    .gallery {
+      #video-carousel .carousel__slide {
+        max-height: 300px;
+      }
+
+      #video-thumb-carousel {
+        display: block;
+
+        .carousel__slide img {
+          width: 135px;
+          height: 100px;
+        }
+      }
+
+      .line {
+        margin-top: 30px;
+        &::after {
+          width: 40px;
+          height: 10px;
+          top: -5px;
+        }
+      }
+    }
     .btn-filled {
       width: 250px;
       height: 50px;
       font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .car-page .gallery {
+    padding: 0 0 10px;
+    #video-carousel .carousel__slide {
+      max-height: 180px;
+    }
+
+    #video-thumb-carousel .carousel__slide img {
+      width: 75px;
+      height: 50px;
     }
   }
 }

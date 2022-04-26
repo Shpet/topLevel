@@ -86,16 +86,16 @@ $(document).ready(function () {
   });
 
   // Initialise Video Carousel
-  const mainCarousel = new Carousel(document.querySelector('#video-carousel'), {
+  const videoCarousel = new Carousel(document.querySelector('#video-carousel'), {
     Dots: false,
   });
 
   // Thumbnails
-  const thumbCarousel = new Carousel(
+  const thumbVideoCarousel = new Carousel(
     document.querySelector('#video-thumb-carousel'),
     {
       Sync: {
-        target: mainCarousel,
+        target: videoCarousel,
         friction: 0,
       },
       Dots: false,
