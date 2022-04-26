@@ -237,62 +237,52 @@
             <div id="video-carousel" class="carousel">
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_0139.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_0139.webp"
-                            alt="IMG_0139.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_0139.webp" alt="IMG_0139.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_0151.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_0151.webp"
-                            alt="IMG_0151.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_0151.webp" alt="IMG_0151.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_0155.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_0155.webp"
-                            alt="IMG_0155.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_0155.webp" alt="IMG_0155.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_0612.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_0612.webp"
-                            alt="IMG_0612.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_0612.webp" alt="IMG_0612.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_1171.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_1171.webp"
-                            alt="IMG_1171.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_1171.webp" alt="IMG_1171.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_1174.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_1174.webp"
-                            alt="IMG_1174.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_1174.webp" alt="IMG_1174.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_1729.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_1729.webp"
-                            alt="IMG_1729.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_1729.webp" alt="IMG_1729.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_7719.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_7719.webp"
-                            alt="IMG_7719.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_7719.webp" alt="IMG_7719.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_9640.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_9640.webp"
-                            alt="IMG_9640.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_9640.webp" alt="IMG_9640.webp">
                     </a>
                 </div>
                 <div class="carousel__slide">
                     <a data-fancybox="photo-gallery" href="../../images/page-car/slider/nissan/IMG_9684.webp">
-                        <img src="../../images/page-car/slider/nissan/IMG_9684.webp"
-                            alt="IMG_9684.webp">
+                        <img src="../../images/page-car/slider/nissan/IMG_9684.webp" alt="IMG_9684.webp">
                     </a>
                 </div>
             </div>
@@ -453,15 +443,14 @@
             <h4>Leave your contact details</h4>
             <p class="subtitle">So that our specialist can reply as soon as possible</p>
 
-            <form>
+            <form action="" method="post" id="contact">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <input type="text" name="model" placeholder="Make & Model" required>
                 <input type="text" name="upgrade" placeholder="What do you want to upgrade" required>
+                <input type="hidden" name="formId" value="contacts" />
 
-                <input type="hidden" name="formId" value="Contact" />
-
-                <button type="submit" class="btn-filled">Submit an Application</button>
+                <button type="submit" class="btn-filled" data-form="contact">Submit an Application</button>
 
                 <div class="checkbox-wrap">
                     <label class="checkcontainer">
@@ -469,7 +458,7 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <a href="../pages/privacy.html" target="_blank">Privacy Policy</a>
+                    <a href="../privacy.html" target="_blank">Privacy Policy</a>
                 </div>
             </form>
         </div>

@@ -17,6 +17,10 @@
     .sub-title {
       font-size: 25px;
       margin: 20px 0 60px;
+
+      b{
+        font-size: inherit;
+      }
     }
 
     .features {

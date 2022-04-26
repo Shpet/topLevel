@@ -718,6 +718,10 @@ header.container nav a.active {
   margin: 20px 0 60px;
 }
 
+.preview-screen .trigger .sub-title b {
+  font-size: inherit;
+}
+
 .preview-screen .trigger .features {
   margin-bottom: 60px;
   display: -webkit-box;
