@@ -35,7 +35,11 @@
     }
   }
 
-  &.error{
+  &.error .modal-content {
     max-width: 530px;
+
+    .subtitle {
+      font-size: 15px;
+    }
   }
 }

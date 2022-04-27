@@ -60,6 +60,10 @@
         width: 300px;
         object-fit: cover;
       }
+
+      &.is-nav-selected.is-selected {
+        display: none;
+      }
     }
   }
 }

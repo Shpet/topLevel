@@ -33,22 +33,37 @@
     margin: 0 auto;
     position: relative;
     top: 67px;
-    width: 80%;
+    width: fit-content;
     height: 1px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
 
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      top: -8px;
-      left: calc(50% - 24px);
-      width: 48px;
-      height: 16px;
-      background-color: $main;
-      border-radius: 6px;
+    button {
+      &:first-child span {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      span {
+        margin: 0;
+        position: relative;
+        top: -5px;
+        background-color: $main;
+        border-radius: 0;
+      }
+    }
+
+    button.active {
+      span {
+        background-color: $main;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+
+      & ~ button span {
+        background-color: transparent;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@ $(document).ready(function () {
     margin: 41,
     center: true,
     nav: true,
-    dots: false,
+    dots: true,
     items: 1,
     stagePadding: 93,
     autoplay: true,

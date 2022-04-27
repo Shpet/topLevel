@@ -92,6 +92,13 @@ body {
   img.withBg {
     background-color: hsl(0, 0%, 90%);
   }
+
+  .red {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: $main;
+  }
 }
 
 .carousel {

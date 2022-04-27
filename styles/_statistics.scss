@@ -45,7 +45,7 @@
           height: 50px;
           border-radius: 50%;
           background: #ed1c24;
-          filter: blur(35px);
+          filter: blur(15px);
         }
       }
 
@@ -376,7 +376,7 @@
           flex-direction: row;
           justify-content: flex-end;
           align-items: baseline;
-          gap: 20px;
+          gap: 30px;
           position: relative;
 
           h2 {
@@ -436,12 +436,12 @@
 
       div[class*='benefits__item'] {
         margin: 0;
-        gap: 20px;
+        padding: 20px 17px;
+        gap: 24px;
         flex: 1 1 40%;
         max-width: 50%;
         width: 157px;
         height: 166px;
-        justify-content: center;
 
         &::before {
           display: none;

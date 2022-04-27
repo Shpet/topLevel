@@ -238,6 +238,13 @@ body img.withBg {
   background-color: #e6e6e6;
 }
 
+body .red {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: #ed1c24;
+}
+
 .carousel__nav {
   margin: 0;
   position: absolute;
@@ -703,7 +710,7 @@ header.container nav a.active {
 }
 
 .preview-screen {
-  background-image: linear-gradient(90deg, #000000 13.35%, rgba(0, 0, 0, 0) 61.66%), linear-gradient(1.23deg, #000000 6.2%, rgba(0, 0, 0, 0) 21.79%), linear-gradient(182.06deg, #000000 8.2%, rgba(0, 0, 0, 0) 92.71%), url("../images/bg-preview-screen.webp");
+  background-image: linear-gradient(90deg, #000000 10.35%, rgba(0, 0, 0, 0) 45.66%), linear-gradient(1.23deg, #000000 5.2%, rgba(0, 0, 0, 0) 16.79%), linear-gradient(182.06deg, #000000 6.2%, rgba(0, 0, 0, 0) 72.71%), url("../images/bg-preview-screen.webp");
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -856,8 +863,8 @@ header.container nav a.active {
   height: 50px;
   border-radius: 50%;
   background: #ed1c24;
-  -webkit-filter: blur(35px);
-          filter: blur(35px);
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
 }
 
 .statistics .line__item h2 {
@@ -1241,7 +1248,7 @@ header.container nav a.active {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    gap: 20px;
+    gap: 30px;
     position: relative;
   }
   .statistics .mobile-line .line__item h2 {
@@ -1296,16 +1303,14 @@ header.container nav a.active {
   }
   .statistics .benefits div[class*='benefits__item'] {
     margin: 0;
-    gap: 20px;
+    padding: 20px 17px;
+    gap: 24px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 40%;
             flex: 1 1 40%;
     max-width: 50%;
     width: 157px;
     height: 166px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .statistics .benefits div[class*='benefits__item']::before {
     display: none;
@@ -1374,7 +1379,9 @@ header.container nav a.active {
   margin: 0 auto;
   position: relative;
   top: 67px;
-  width: 80%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 1px;
   background-color: #fff;
   display: -webkit-box;
@@ -1385,16 +1392,27 @@ header.container nav a.active {
           justify-content: space-between;
 }
 
-.photo-slider-wrap .owl-carousel .owl-dots::after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: -8px;
-  left: calc(50% - 24px);
-  width: 48px;
-  height: 16px;
+.photo-slider-wrap .owl-carousel .owl-dots button:first-child span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.photo-slider-wrap .owl-carousel .owl-dots button span {
+  margin: 0;
+  position: relative;
+  top: -5px;
   background-color: #ed1c24;
-  border-radius: 6px;
+  border-radius: 0;
+}
+
+.photo-slider-wrap .owl-carousel .owl-dots button.active span {
+  background-color: #ed1c24;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.photo-slider-wrap .owl-carousel .owl-dots button.active ~ button span {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1852,6 +1870,10 @@ header.container nav a.active {
   height: 46px;
 }
 
+.our-works .works__item .red {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1250px) {
   .our-works .works__item {
     -ms-flex-preferred-size: 240px;
@@ -2031,6 +2053,10 @@ header.container nav a.active {
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.video-slider-wrap #video-thumb-carousel .carousel__slide.is-nav-selected.is-selected {
+  display: none;
 }
 
 @media screen and (max-width: 1250px) {
@@ -2610,8 +2636,12 @@ footer .footer-items .usefull-links button {
   font-style: italic;
 }
 
-.thanks.error {
+.thanks.error .modal-content {
   max-width: 530px;
+}
+
+.thanks.error .modal-content .subtitle {
+  font-size: 15px;
 }
 
 .modal-form .modal-content {
@@ -2967,8 +2997,8 @@ footer .footer-items .usefull-links button {
 }
 
 .car-page .preview.ford {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-ford-gt.webp");
-  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-ford-gt.webp");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.18))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.18))), url("../images/page-car/bg-ford-gt.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.18) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.18) 85.54%), url("../images/page-car/bg-ford-gt.webp");
 }
 
 .car-page .preview.ford .container .info {
@@ -2977,13 +3007,13 @@ footer .footer-items .usefull-links button {
 }
 
 .car-page .preview.nissan {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-nissan.webp");
-  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-nissan.webp");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.18))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.18))), url("../images/page-car/bg-nissan.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.18) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.18) 85.54%), url("../images/page-car/bg-nissan.webp");
 }
 
 .car-page .preview.dodge {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.25))), url("../images/page-car/bg-dodge.webp");
-  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.25) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.25) 85.54%), url("../images/page-car/bg-dodge.webp");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-39.32%, #000000), color-stop(18.68%, rgba(0, 0, 0, 0.18))), -webkit-gradient(linear, left top, right top, color-stop(-5.3%, #000000), color-stop(85.54%, rgba(0, 0, 0, 0.18))), url("../images/page-car/bg-dodge.webp");
+  background-image: linear-gradient(0deg, #000000 -39.32%, rgba(0, 0, 0, 0.18) 18.68%), linear-gradient(90deg, #000000 -5.3%, rgba(0, 0, 0, 0.18) 85.54%), url("../images/page-car/bg-dodge.webp");
 }
 
 .car-page .preview .container {
@@ -3010,7 +3040,6 @@ footer .footer-items .usefull-links button {
 
 .car-page .preview .container h1 .red {
   font-size: inherit;
-  color: #ed1c24;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -3090,8 +3119,8 @@ footer .footer-items .usefull-links button {
 
 .car-page .characteristics__item img {
   position: absolute;
-  -webkit-box-shadow: inset 0px 0px 97px 97px #551114, 0 0 66px 50px #270406;
-          box-shadow: inset 0px 0px 97px 97px #551114, 0 0 66px 50px #270406;
+  -webkit-box-shadow: inset 0px 0px 97px 97px #7e171c, 0 0 97px 3px #ed1c24;
+          box-shadow: inset 0px 0px 97px 97px #7e171c, 0 0 97px 3px #ed1c24;
   border-radius: 50%;
 }
 
@@ -3345,13 +3374,19 @@ footer .footer-items .usefull-links button {
 }
 
 @media screen and (max-width: 768px) {
+  .car-page .preview {
+    height: 500px;
+  }
   .car-page .preview .container h1 {
     font-size: 48px;
   }
   .car-page .preview .container .info,
   .car-page .preview .container .motto p {
-    font-size: 18px;
+    font-size: 14px;
     white-space: pre-line;
+  }
+  .car-page .preview .container .motto {
+    margin-bottom: 20px;
   }
   .car-page .steps {
     padding: 20px 15px;
@@ -3426,8 +3461,15 @@ footer .footer-items .usefull-links button {
 }
 
 @media screen and (max-width: 500px) {
+  .car-page .preview {
+    padding-top: 110px;
+    height: 300px;
+  }
+  .car-page .preview.ford .container .info, .car-page .preview .container .info {
+    max-width: 320px;
+  }
   .car-page .preview .container h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
   .car-page .preview .container .info,
   .car-page .preview .container .motto p {
@@ -3435,6 +3477,7 @@ footer .footer-items .usefull-links button {
     white-space: normal;
   }
   .car-page .preview .container .motto {
+    margin: 10px 0;
     gap: 10px;
   }
   .car-page .characteristics {
