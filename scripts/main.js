@@ -65,14 +65,15 @@ $(document).ready(function () {
   );
 
   modalCloseButtons.forEach((button) => {
-    button.addEventListener('click', () => {});
+    button.addEventListener('click', () => {
+      offModal();
+    });
   });
 
   modalCloseBackgrounds.forEach((background) => {
     background.addEventListener('click', (e) => {
       if (e.target === background) {
-        const activeModal = document.querySelector('.modal.active');
-        activeModal.classList.remove('active');
+        offModal();
       }
     });
   });
@@ -86,33 +87,34 @@ $(document).ready(function () {
 
       const form = e.target.getAttribute('data-form');
       const mailUrl = '../backend/mail.php';
-      const selectorModalThanks = '.modal.thanks';
 
       offModal();
-      sendAjaxForm(selectorModalThanks, form, mailUrl);
+      sendAjaxForm(form, mailUrl);
 
       return false;
     });
   });
 });
 
-function sendAjaxForm(thanks, ajax_form, url) {
+function sendAjaxForm(ajax_form, url) {
   $.ajax({
     url: url,
     type: 'POST',
     dataType: 'html',
     data: $('#' + ajax_form).serialize(),
     success: function () {
-      document.querySelector(`${thanks}`).classList.add('active');
+      document.querySelector('.modal.thanks').classList.add('active');
     },
     error: function () {
-      // Данные не отправлены
-      console.log('error');
+      document.querySelector('.modal.thanks.error').classList.add('active');
     },
   });
 }
 
 function offModal() {
-  const activeModal = document.querySelector('.modal.active');
-  activeModal.classList.remove('active');
+  const activeModal = document.querySelectorAll('.modal.active');
+
+  activeModal.forEach((modal) => {
+    modal.classList.remove('active');
+  });
 }
