@@ -55,10 +55,10 @@
       width: unset;
       cursor: pointer;
 
-      iframe {
-        width: 290px;
-        height: 205px;
-        pointer-events: none;
+      img {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
       }
     }
   }
@@ -93,9 +93,9 @@
 
     #video-thumb-carousel {
       .carousel__slide {
-        iframe {
-          width: 205px;
-          height: 145px;
+        img {
+          width: 195px;
+          height: 150px;
         }
       }
     }
@@ -126,8 +126,8 @@
     #video-thumb-carousel {
       .carousel__slide {
         margin-right: 20px;
-        iframe {
-          width: 141px;
+        img {
+          width: 135px;
           height: 100px;
         }
       }
@@ -161,8 +161,9 @@
       }
     }
 
-    #video-thumb-carousel {
-      display: none;
+    #video-thumb-carousel .carousel__slide img {
+      width: 75px;
+      height: 50px;
     }
 
     button {

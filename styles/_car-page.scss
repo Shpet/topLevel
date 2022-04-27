@@ -275,14 +275,6 @@
       }
     }
 
-    #video-thumb-carousel {
-      .carousel__slide img {
-        height: 200px;
-        width: 300px;
-        object-fit: cover;
-      }
-    }
-
     .line {
       margin-top: 70px;
       width: 100%;
@@ -320,11 +312,6 @@
   .car-page .gallery {
     #video-carousel .carousel__slide {
       max-height: 430px;
-    }
-
-    #video-thumb-carousel .carousel__slide img {
-      width: 195px;
-      height: 150px;
     }
   }
 }
@@ -447,15 +434,6 @@
         max-height: 300px;
       }
 
-      #video-thumb-carousel {
-        display: block;
-
-        .carousel__slide img {
-          width: 135px;
-          height: 100px;
-        }
-      }
-
       .line {
         margin-top: 30px;
         &::after {
@@ -478,11 +456,6 @@
     padding: 0 0 10px;
     #video-carousel .carousel__slide {
       max-height: 180px;
-    }
-
-    #video-thumb-carousel .carousel__slide img {
-      width: 75px;
-      height: 50px;
     }
   }
 }

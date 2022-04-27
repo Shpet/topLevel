@@ -2023,10 +2023,11 @@ header.container nav a.active {
   cursor: pointer;
 }
 
-.video-slider-wrap #video-thumb-carousel .carousel__slide iframe {
-  width: 290px;
-  height: 205px;
-  pointer-events: none;
+.video-slider-wrap #video-thumb-carousel .carousel__slide img {
+  height: 200px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1250px) {
@@ -2050,9 +2051,9 @@ header.container nav a.active {
   .video-slider-wrap #video-carousel .carousel__button.is-next {
     right: calc(-50px);
   }
-  .video-slider-wrap #video-thumb-carousel .carousel__slide iframe {
-    width: 205px;
-    height: 145px;
+  .video-slider-wrap #video-thumb-carousel .carousel__slide img {
+    width: 195px;
+    height: 150px;
   }
 }
 
@@ -2076,8 +2077,8 @@ header.container nav a.active {
   .video-slider-wrap #video-thumb-carousel .carousel__slide {
     margin-right: 20px;
   }
-  .video-slider-wrap #video-thumb-carousel .carousel__slide iframe {
-    width: 141px;
+  .video-slider-wrap #video-thumb-carousel .carousel__slide img {
+    width: 135px;
     height: 100px;
   }
 }
@@ -2102,8 +2103,9 @@ header.container nav a.active {
   .video-slider-wrap #video-carousel .carousel__button.is-next {
     right: calc(-35px);
   }
-  .video-slider-wrap #video-thumb-carousel {
-    display: none;
+  .video-slider-wrap #video-thumb-carousel .carousel__slide img {
+    width: 75px;
+    height: 50px;
   }
   .video-slider-wrap button {
     margin-top: 40px;
@@ -2603,6 +2605,10 @@ footer .footer-items .usefull-links button {
   text-align: center;
   font-size: 12px;
   font-style: italic;
+}
+
+.thanks.error {
+  max-width: 530px;
 }
 
 .modal-form .modal-content {
@@ -3257,13 +3263,6 @@ footer .footer-items .usefull-links button {
           align-items: center;
 }
 
-.car-page .gallery #video-thumb-carousel .carousel__slide img {
-  height: 200px;
-  width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .car-page .gallery .line {
   margin-top: 70px;
   width: 100%;
@@ -3304,10 +3303,6 @@ footer .footer-items .usefull-links button {
 @media screen and (max-width: 1250px) {
   .car-page .gallery #video-carousel .carousel__slide {
     max-height: 430px;
-  }
-  .car-page .gallery #video-thumb-carousel .carousel__slide img {
-    width: 195px;
-    height: 150px;
   }
 }
 
@@ -3403,13 +3398,6 @@ footer .footer-items .usefull-links button {
   .car-page .gallery #video-carousel .carousel__slide {
     max-height: 300px;
   }
-  .car-page .gallery #video-thumb-carousel {
-    display: block;
-  }
-  .car-page .gallery #video-thumb-carousel .carousel__slide img {
-    width: 135px;
-    height: 100px;
-  }
   .car-page .gallery .line {
     margin-top: 30px;
   }
@@ -3431,10 +3419,6 @@ footer .footer-items .usefull-links button {
   }
   .car-page .gallery #video-carousel .carousel__slide {
     max-height: 180px;
-  }
-  .car-page .gallery #video-thumb-carousel .carousel__slide img {
-    width: 75px;
-    height: 50px;
   }
 }
 
