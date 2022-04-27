@@ -743,6 +743,9 @@ header.container nav a.active {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
 }
 
 .preview-screen .trigger .btn, .preview-screen .trigger .btn-filled, .preview-screen .trigger .btn-small, .preview-screen .trigger .btn-big {
