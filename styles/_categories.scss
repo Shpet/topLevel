@@ -41,6 +41,7 @@
       align-items: center;
       flex: 1 0 299px;
       max-width: 299px;
+      cursor: pointer;
 
       .img-wrap {
         width: 100%;
@@ -90,7 +91,7 @@
 
 @media screen and(max-width: 768px) {
   .categories {
-      padding: 70px 0;
+    padding: 70px 0;
     h2 {
       margin-bottom: 10px;
       font-size: 25px;
@@ -110,6 +111,10 @@
 
         .img-wrap {
           height: 122px;
+
+          img {
+            height: 100%;
+          }
         }
 
         .description {
