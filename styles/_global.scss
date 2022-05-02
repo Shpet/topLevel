@@ -136,6 +136,13 @@ body {
   }
 }
 
+.anchor-fixed{
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 1250px) {
   body {
     .container {
