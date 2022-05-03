@@ -136,11 +136,19 @@ body {
   }
 }
 
-.anchor-fixed{
+.anchor-top.anchor-fixed {
   position: fixed;
   bottom: 30px;
-  right: 50px;
+  right: 40px;
   z-index: 1000;
+
+  a {
+    width: 29px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 10px solid #000;
+    box-sizing: content-box;
+  }
 }
 
 @media screen and (max-width: 1250px) {
