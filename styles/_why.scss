@@ -10,6 +10,24 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
+  @media screen and (max-width: 1600px) {
+    background-image: linear-gradient(
+        181.2deg,
+        #000000 -12.55%,
+        rgba(0, 0, 0, 0) 115.88%
+      ),
+      url(../images/bg-why-tablet.webp);
+  }
+
+  @media screen and (max-width: 375px) {
+    background-image: linear-gradient(
+        181.2deg,
+        #000000 -12.55%,
+        rgba(0, 0, 0, 0) 115.88%
+      ),
+      url(../images/bg-why-mob.webp);
+  }
+  
   h2 {
     margin: 25px auto 75px;
     font-weight: 600;

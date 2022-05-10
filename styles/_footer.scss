@@ -9,6 +9,24 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: 1600px) {
+    background-image: linear-gradient(
+        180.47deg,
+        #000000 -7.71%,
+        rgba(0, 0, 0, 0) 132.74%
+      ),
+      url('../images/bg-footer-tablet.webp');
+  }
+
+  @media screen and (max-width: 375px) {
+    background-image: linear-gradient(
+        180.47deg,
+        #000000 -7.71%,
+        rgba(0, 0, 0, 0) 132.74%
+      ),
+      url('../images/bg-footer-tablet.webp');
+  }
+
   .footer-items {
     padding: 100px 0;
     display: flex;

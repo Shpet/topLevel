@@ -5,6 +5,14 @@
   background-size: contain;
   background-position: center;
 
+  @media screen and(max-width: 1600px) {
+    background-image: url(../images/photo-slider/bg-photo-slider-tablet.webp);
+  }
+
+  @media screen and(max-width: 400px) {
+    background-image: url(../images/photo-slider/bg-photo-slider-mob.webp);
+  }
+
   .container {
     max-width: 920px;
   }
